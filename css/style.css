@@ -13,9 +13,13 @@
 
 body {
     font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 1.5;
+}
+
+.main-content {
+    padding-left: 270px;
 }
 
 section {
@@ -24,19 +28,90 @@ section {
     /* display: block; */
     padding: 0 30px;
 }
-.main-content {
-    padding-left: 270px;
-}
+
 
 .container {
     max-width: 1100px;
     width: 100%;
     margin: auto;
 }
+/* change korbo */
+section .container {
+    padding: 60px 0 70px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    /* position: relative; */
+}
+
+.section-title {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    color: #302e4d;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    /* margin: 0; */
+    position: relative;
+}
+
+.section-title h2::before {
+    content: '';
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.section-title h2::after {
+    content: '';
+    height: 4px;
+    width: 25px;
+    position: absolute;
+    top: 110%;
+    left: 0;
+}
+
+.padd-15 {
+    padding: 0 15px;
+}
 
 .shadow-dark {
     -webkit-box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.btn {
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: #fff;
+    border-radius: 40px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: inline-block;
+    /* white-space: nowrap; */
+}
+
+.btn:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none !important;
 }
 
 /* Aside 
@@ -196,7 +271,7 @@ aside .copyright-text {
 .home .intro p {
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.045rem;
     color: #504e70;
 }
 
@@ -220,4 +295,221 @@ aside .copyright-text {
 .home .intro .social-link a:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+/* About Section
+================== */
+.about-content {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #302e4d;
+}
+
+.about .about-content .about-text p {
+    /* font-size: 1rem; */
+    line-height: 1.6;
+    color: #504e70;
+    /* margin: 0; */
+}
+
+.about .about-content .personal-info {
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 40px;
+}
+
+.about .about-content .personal-info .info-item {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.about .about-content .personal-info .info-item p {
+    font-weight: 600;
+    padding: 10px 0;
+    /* font-size: 1rem; */
+    color: #302e4d;
+    /* margin: 0; */
+    border-bottom: 1px solid #e8dfec;
+}
+
+.about .about-content .personal-info .info-item p span {
+    font-weight: 400;
+    color: #504e70;
+    margin-left: 4px;
+    display: inline-block;
+}
+
+.about .about-content .personal-info .buttons {
+    margin-top: 30px;
+}
+
+.about .about-content .personal-info .buttons .btn {
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.about .about-content .skills {
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
+}
+
+.about .about-content .skills .skill-item {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.about .about-content .skills .skill-item h5 {
+    line-height: 2.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #302e4d;
+    /* margin: 0; */
+}
+
+.about .about-content .skills .skill-item .progress {
+    background-color: #e3e3e3;
+    height: 7px;
+    border-radius: 4px;
+    width:100%;
+    position: relative;
+}
+.about .about-content .skills .skill-item .progress .progress-in {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.progress-in-for-photoshop {
+    width: 85%;
+}
+
+.progress-in-for-illustrator {
+    width: 70%;
+}
+
+.progress .progress-in-for-sketch {
+    width: 95%;
+}
+
+.progress-in-for-graphic-design {
+    width: 65%;
+}
+
+.about .about-content .skills .skill-item .skill-percent {
+    line-height: 2.5rem;
+    position: absolute;
+    right: 0;
+    top: -40px;
+    /* font-weight: 400; */
+    color: #302e4d;
+}
+
+.about .about-content .education {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+
+.about .about-content .experience {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+
+.about .about-content h3.title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #302e4d;
+}
+
+.about .about-content .timeline-box {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .timeline-box .timeline {
+    background-color: #fdf9ff;
+    padding: 30px 15px;
+    border: 1px solid #d4d4e3;
+    border-radius: 10px;
+    /* width: 100%; */
+}
+
+.about .about-content .timeline-box .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+.about .about-content .timeline-box .timeline .timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.about .about-content .timeline-box .timeline .timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 7px;
+}
+
+.about .about-content .timeline-box .timeline .timeline-item .circle-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.about .about-content .timeline-box .timeline .timeline-item .timeline-date {
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: -5px;
+    margin-bottom: 12px;
+    color: #504e70;
+}
+
+.about .about-content .timeline-box .timeline .timeline-item .timeline-date i {
+    margin-right: 5px;
+}
+
+.about .about-content .timeline-box .timeline .timeline-item .timeline-title {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #302e4d;
+    margin-bottom: 15px;
+}
+
+.about .about-content .timeline-box .timeline .timeline-item .timeline-text {
+    /* font-size: 1rem; */
+    line-height: 1.6;
+    color: #504e70;
+    margin: 0;
 }
