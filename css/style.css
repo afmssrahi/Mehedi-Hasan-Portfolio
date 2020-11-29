@@ -1042,5 +1042,6 @@ aside .copyright-text {
 
     .email {
         font-size: 0.825rem;
+        margin: 3px 0 2px;
     }
 }
