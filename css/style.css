@@ -29,7 +29,7 @@ input, textarea, select {
 section {
     background-color: #f2f2fc;
     min-height: 100vh;
-    /* display: block; */
+    display: block;
     padding: 0 30px;
 }
 
@@ -176,22 +176,22 @@ aside .nav-toggler {
     position: fixed;
     left: 300px;
     top: 30px;
-    /* z-index: 11; */
+    z-index: 11;
     border-radius: 5px;
     background-color: #fdf9ff;
-    /* display: -ms-flexbox;
-    display: flex; */
+    display: -ms-flexbox;
+    display: flex;
     display: none;
-    /* -ms-flex-align: center; */
+    -ms-flex-align: center;
     align-items: center;
-    /* -ms-flex-pack: center; */
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 aside .nav-toggler span {
     height: 2px;
     width: 18px;
-    /* display: inline-block; */
+    display: inline-block;
     position: relative;
 }
 
@@ -216,9 +216,9 @@ aside .nav {
     /* padding: 0; */
 }
 
-/* aside .nav li {
+aside .nav li {
     display: block;
-} */
+}
 
 aside .nav li a {
     /* font-size: 1rem; */
@@ -249,7 +249,7 @@ aside .copyright-text {
 ==================*/
 .home {
     min-height: 100vh;
-    /* display: -ms-flexbox; */
+    display: -ms-flexbox;
     display: flex;
 
 }
@@ -553,7 +553,7 @@ aside .copyright-text {
 .service .service-item .service-item-inner .icon {
     height: 60px;
     width: 60px;
-    /* display: block; */
+    display: block;
     margin: 0 auto 30px;
     text-align: center;
     border-radius: 50%;
@@ -978,4 +978,65 @@ aside .copyright-text {
     padding: 0 50px;
     display: block;
     margin: 0 auto;
+}
+
+
+/* Responsive 
+===================*/
+@media (max-width: 1199px) {
+    aside {
+        left: -270px;
+    }
+
+    .main-content {
+        padding-left: 0;
+    }
+
+    .about .about-content .personal-info .info-item p span {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .service .service-item,
+    .portfolio .portfolio-item {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about .about-content .personal-info,
+    .about .about-content .skills,
+    .about .about-content .education,
+    .about .about-content .experience,
+    .service .service-item,
+    .contact .contact-form .col-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .portfolio .portfolio-filter button {
+        margin-bottom: 10px;
+    }
+
+    .contact .contact-info-item p {
+        font-size: 0.825rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .portfolio .portfolio-item,
+    .contact .contact-info-item  {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .contact .contact-info-item p {
+        font-size: 1rem;
+    }
 }
